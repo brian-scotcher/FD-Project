@@ -8,7 +8,7 @@
 @font-face {
     font-family: "robotoBold";
     src: url(./fonts/Roboto-Bold.ttf), format('truetype');
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 @font-face {
@@ -21,83 +21,88 @@
 @font-face {
     font-family: "robotoThinItalic";
     src: url(./fonts/Roboto-ThinItalic.ttf), format('truetype');
-    font-weight:lighter;
+    font-weight: lighter;
 
 }
 
 
-body{
-    margin:0;
-    
+body {
+    margin: 0;
+
 }
 
 /*Padding on outside of the page*/
-.content{
+.content {
     padding: 0% 15% 0% 15%;
 }
+
 /*Top blue box*/
-.header{
+.header {
     background-color: #1F2937;
-    height: 75vh;
     margin: 0px;
+    padding-bottom: 100px;
 }
 
 /*Navbar elements*/
-.navbar{
+.navbar {
     display: flex;
     min-height: fit-content;
 }
 
-.navGroup{
-    margin-left:auto;
+.navGroup {
+    margin-left: auto;
     padding: 20px 0px;
 }
 
-.navElement{
+.navElement {
     font: 18px "robotoRegular", sans-serif;
     color: #E5E7EB;
-    padding:20px 5px 20px 5px;
+    padding: 20px 5px 20px 5px;
 
 }
 
-#headerLogo{
+#headerLogo {
     font: 24px "robotoBold", sans-serif;
     color: #F9FAF8;
     width: fit-content;
     padding: 0px 25px 0px 0px;
-            
+
 }
 
 /*Sign up and image placeholder in header*/
 
-.intro{
+.intro {
     display: inline-flex;
     width: 100%;
     margin-top: 60px;
     align-content: space-between;
     flex-direction: row;
 }
-h2{
+
+h2 {
     font: 48px "robotoBold", sans-serif;
     color: #F9FAF8;
     margin: 0px;
-    
+
 }
-.subtext{
+
+.subtext {
     font: 18px "robotoLight", sans-serif;
     color: #E5E7EB;
+    padding-right: 10px;
 }
-.signupButton{
+
+.signupButton {
     background-color: #3882F6;
     font: 18px "robotoRegular", sans-serif;
     color: #E5E7EB;
     border-radius: 5px;
     border: 0;
     padding: 2px 10px;
-    
+
 }
 
-.imgPlaceHolder{
+.imgPlaceHolder {
     background-color: grey;
     width: 49%;
     height: auto;
@@ -109,67 +114,76 @@ h2{
     margin: 0;
     float: inline-end;
 }
-.contentBox{
+
+.contentBox {
     flex-direction: column;
     width: 49%;
 }
 
 /*Information and images with subtext*/
-.infoDiv{
+.infoDiv {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
 }
-.infoHeader{
-    font: 36px "robotoBold", sans-serif;;
+
+.infoHeader {
+    font: 36px "robotoBold", sans-serif;
+    padding: 30px 0px 20px 0px;
     font-weight: bolder;
     color: #1F2937;
 }
-.infoContent{
+
+.infoContent {
     display: inline-flex;
     justify-content: space-between;
     width: 80%;
 }
-¨.infoItem{
+
+¨.infoItem {
     display: flex;
     flex-direction: column;
 }
-.infoImg{
-    border: 2px solid #3882F6 ;
+
+.infoImg {
+    border: 2px solid #3882F6;
     width: 100px;
     height: 100px;
     border-radius: 10px;
 }
-.infoText{
+
+.infoText {
     font: 14px "robotoThinItalic", sans-serif;
-    font-weight:lighter;
+    font-weight: lighter;
     color: #b5b7be;
     width: 100px;
     text-align: center;
     margin: 0;
 }
-/*Quote section*/   
-.quoteDiv{
+
+/*Quote section*/
+.quoteDiv {
     background-color: #E5E7EB;
-    width:100%;
+    width: 100%;
     padding: 30px 0px;
-    margin:30px 0px;
-    
-    
+    margin: 30px 0px;
+
+
 }
 
-.quote{
+.quote {
     display: flex;
     font: 26px "robotoThinItalic", sans-serif;
     font-weight: lighter;
-    color:#1F2937;
+    color: #1F2937;
     width: 80%;
     margin-left: 10%;
     margin-bottom: 0;
 }
-.author{
+
+.author {
     display: flex;
     justify-content: end;
     font: 20px "robotoBold", sans-serif;
@@ -179,22 +193,22 @@ h2{
 }
 
 /*Sign up banner*/
-.banner{
-    display:flex;
+.banner {
+    display: flex;
     flex-direction: row;
     width: 60%;
     background-color: #3882F6;
     align-items: center;
     margin: auto;
     border-radius: 10px;
-    padding:0px 30px;
+    padding: 0px 30px;
     justify-content: space-between;
-    padding:0% 10%;
+    padding: 0% 10%;
     margin-bottom: 30px;
 
 }
 
-.bannerText{
+.bannerText {
     display: flex;
     flex-direction: column;
     color: #E5E7EB;
@@ -202,25 +216,25 @@ h2{
     margin: 0;
 }
 
-.bannerSignupButton{
+.bannerSignupButton {
     background-color: #3882F6;
     font: 18px "robotoRegular", sans-serif;
     color: #E5E7EB;
     border-radius: 5px;
-    border: 3px solid  #E5E7EB;
+    border: 3px solid #E5E7EB;
     padding: 2px 10px;
     margin: 0;
 }
 
-.bannerHeader{
-    margin:15px 0px 0px 0px;
+.bannerHeader {
+    margin: 15px 0px 0px 0px;
 }
 
-.bannerSubtext{
-    margin:0px 0px 15px 0px
+.bannerSubtext {
+    margin: 0px 0px 15px 0px
 }
 
-.footer{
+.footer {
     background-color: #1F2937;
     height: 10vh;
     margin: 0px;
@@ -228,7 +242,7 @@ h2{
     justify-content: center;
 }
 
-.copyright{
+.copyright {
     font: 18px "robotoLight", sans-serif;
     color: #E5E7EB;
 }
