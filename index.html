@@ -1,25 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Star Wars</title>
+    <title>Company Site | Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
 </head>
+
 <body>
-    <h1>Star Wars</h1>
-    <p>Star Wars is something I am interested. I've been a fan for many years
-        <br>
-        Here are a selection of some of my favourite movies from the saga.
-    </p>
-    <ul>
-        <li>Star Wars</li>
-        <ol>
-            <li><a href="./projectPages/solo.html">Solo</a></li>
-            <li><a href="./projectPages/empireStrikesBack.html">Empire Strikes Back</a></li>
-            <li><a href="./projectPages/rogueOne.html">Rogue One</a></li>
-            <li><a href="./projectPages/cloneWars.html">The Clone Wars</a></li>
-        </ol>
-    </ul>
-    
-    
+    <div class="header">
+        <div class="content">
+            <div class="navbar">
+                <h1 id="headerLogo">Header logo</h1>
+                <div class="navGroup">
+                    <a href="./pages/page1.html" class="navElement">header link one</a>
+                    <a href="./pages/page1.html" class="navElement">header link two</a>
+                    <a href="./pages/page1.html" class="navElement">header link three</a>
+                </div>
+            </div>
+            <div class="intro">
+                <div class="contentBox">
+                    <h2>This website is awesome</h2>
+                    <p class="subtext">
+                        This website has some subtext that goes here under the main title. It's a smaller font and the
+                        colour is a lower contrast.
+                    </p>
+                    <button class="signupButton" type="button" onclick="location.href='./pages/signup.html';">Sign up</button>
+                </div>
+
+
+                <div class="imgPlaceHolder">
+                    <p>This is a placeholder for an image</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="infoDiv">
+            <h2 class="infoHeader">Some random information</h2>
+            <div class="infoContent">
+                <div class="infoItem">
+                    <div class="infoImg"></div>
+                    <p class="infoText">This is some subtext under an illustration or image.</p>
+                </div>
+                <div class="infoItem">
+                    <div class="infoImg"></div>
+                    <p class="infoText">This is some subtext under an illustration or image.</p>
+                </div>
+                <div class="infoItem">
+                    <div class="infoImg"></div>
+                    <p class="infoText">This is some subtext under an illustration or image.</p>
+                </div>
+                <div class="infoItem">
+                    <div class="infoImg"></div>
+                    <p class="infoText">This is some subtext under an illustration or image.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quoteDiv">
+        <div class="content">
+            <p class="quote">This is an inpiring quote, or a testimonial from a customer. Maybe it's just filling up
+                space , or maybe people will actually read it. Who knows? All i know is that it looks nice.</p>
+            <p class="author">-Thor</p>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="bannerText">
+            <h3 class="bannerHeader">Call to action. It's time</h3>
+            <p class="bannerSubtext">Sign up for our product by clicking on that button right over there.</p>
+        </div>
+        <button class="bannerSignupButton" type="button" onclick="location.href='./pages/signup.html';">Sign up</button>
+    </div>
+    <div class="footer">
+        <p class="copyright">Copyright &copy;</p>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,234 @@
+/*Imported fonts*/
+@font-face {
+    font-family: "robotoRegular";
+    src: url(./fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "robotoBold";
+    src: url(./fonts/Roboto-Bold.ttf), format('truetype');
+    font-weight:bolder;
+}
+
+@font-face {
+    font-family: "robotoLight";
+    src: url(./fonts/Roboto-Light.ttf), format('truetype');
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: "robotoThinItalic";
+    src: url(./fonts/Roboto-ThinItalic.ttf), format('truetype');
+    font-weight:lighter;
+
+}
+
+
+body{
+    margin:0;
+    
+}
+
+/*Padding on outside of the page*/
+.content{
+    padding: 0% 15% 0% 15%;
+}
+/*Top blue box*/
+.header{
+    background-color: #1F2937;
+    height: 75vh;
+    margin: 0px;
+}
+
+/*Navbar elements*/
+.navbar{
+    display: flex;
+    min-height: fit-content;
+}
+
+.navGroup{
+    margin-left:auto;
+    padding: 20px 0px;
+}
+
+.navElement{
+    font: 18px "robotoRegular", sans-serif;
+    color: #E5E7EB;
+    padding:20px 5px 20px 5px;
+
+}
+
+#headerLogo{
+    font: 24px "robotoBold", sans-serif;
+    color: #F9FAF8;
+    width: fit-content;
+    padding: 0px 25px 0px 0px;
+            
+}
+
+/*Sign up and image placeholder in header*/
+
+.intro{
+    display: inline-flex;
+    width: 100%;
+    margin-top: 60px;
+    align-content: space-between;
+    flex-direction: row;
+}
+h2{
+    font: 48px "robotoBold", sans-serif;
+    color: #F9FAF8;
+    margin: 0px;
+    
+}
+.subtext{
+    font: 18px "robotoLight", sans-serif;
+    color: #E5E7EB;
+}
+.signupButton{
+    background-color: #3882F6;
+    font: 18px "robotoRegular", sans-serif;
+    color: #E5E7EB;
+    border-radius: 5px;
+    border: 0;
+    padding: 2px 10px;
+    
+}
+
+.imgPlaceHolder{
+    background-color: grey;
+    width: 49%;
+    height: auto;
+    text-align: center;
+    padding: 10% 0%;
+    font: 18px "robotoLight", sans-serif;
+    color: #E5E7EB;
+    border-radius: 5px;
+    margin: 0;
+    float: inline-end;
+}
+.contentBox{
+    flex-direction: column;
+    width: 49%;
+}
+
+/*Information and images with subtext*/
+.infoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.infoHeader{
+    font: 36px "robotoBold", sans-serif;;
+    font-weight: bolder;
+    color: #1F2937;
+}
+.infoContent{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+}
+¨.infoItem{
+    display: flex;
+    flex-direction: column;
+}
+.infoImg{
+    border: 2px solid #3882F6 ;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.infoText{
+    font: 14px "robotoThinItalic", sans-serif;
+    font-weight:lighter;
+    color: #b5b7be;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+}
+/*Quote section*/   
+.quoteDiv{
+    background-color: #E5E7EB;
+    width:100%;
+    padding: 30px 0px;
+    margin:30px 0px;
+    
+    
+}
+
+.quote{
+    display: flex;
+    font: 26px "robotoThinItalic", sans-serif;
+    font-weight: lighter;
+    color:#1F2937;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 0;
+}
+.author{
+    display: flex;
+    justify-content: end;
+    font: 20px "robotoBold", sans-serif;
+    font-weight: bolder;
+    color: #1F2937;
+    margin: 0;
+}
+
+/*Sign up banner*/
+.banner{
+    display:flex;
+    flex-direction: row;
+    width: 60%;
+    background-color: #3882F6;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    padding:0px 30px;
+    justify-content: space-between;
+    padding:0% 10%;
+    margin-bottom: 30px;
+
+}
+
+.bannerText{
+    display: flex;
+    flex-direction: column;
+    color: #E5E7EB;
+    font: 15px "robotoBold", sans-serif;
+    margin: 0;
+}
+
+.bannerSignupButton{
+    background-color: #3882F6;
+    font: 18px "robotoRegular", sans-serif;
+    color: #E5E7EB;
+    border-radius: 5px;
+    border: 3px solid  #E5E7EB;
+    padding: 2px 10px;
+    margin: 0;
+}
+
+.bannerHeader{
+    margin:15px 0px 0px 0px;
+}
+
+.bannerSubtext{
+    margin:0px 0px 15px 0px
+}
+
+.footer{
+    background-color: #1F2937;
+    height: 10vh;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    font: 18px "robotoLight", sans-serif;
+    color: #E5E7EB;
+}
