@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Assignment</title>
 </head>
+
 <body>
     <script type="text/javascript" src="../js/script.js"></script>
     <h1>JS Assignment</h1>
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
 
     <h2>Assignment 2:</h2>
-    
-    <p id="assignmentTwo"></p>
-    <script>document.getElementById("assignmentTwo").innerHTML="A: The diagonal length of a square with all sides measureing 9cm is "+diagonalLength(9)+"cm"</script>
 
-    
+    <p id="assignment2A"></p>
+    <p id="assignment2B"></p>
+    <p id="assignment2C"></p>
+    <script>document.getElementById("assignment2A").innerHTML = "A: The diagonal length of a square with all sides measureing 9cm is " + diagonalLength(9).toFixed(2) + "cm"</script>
+    <script>document.getElementById("assignment2B").innerHTML = "B: The area of a triangle with the sides of 5cm, 6cm, and 7cm is " + triangleArea() + "cm"</script>
+    <script>document.getElementById("assignment2C").innerHTML = "C: The circumference of a circle with a radius of 4 is " + circleCircumference(4) + "cm, and the area is " + circleArea(4) + "cm" </script>
+
+    <h2>Assignment 3:</h2>
+    <p>Click on the button below to find out which number is larger.</p>
+    <button type="button" onclick=largerNumber()>Which number is larger?</button>
+
+    <p>Click on the button below to see if your number is even or odd.</p>
+    <button type="button" onclick=oddOrEven()>Odd or even number?</button>
+
+    <h2>Assignment 4: Rock, Paper, Scissors</h2>
+    <p>Instructions: Open your browser console and then click the button below</p>
+    <button type="button" onclick=rockPaperScissors()>Play Rock Paper Scissors</button>
+
 </body>
+
 </html>
