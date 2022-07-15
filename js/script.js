@@ -111,40 +111,47 @@ function rockPaperScissors(){//The Rock Paper Scissors game
     if(userOptions.includes(user)){
         //evaluates the winner and prints statement.
         if(user===ai){
-            console.log("Computer chose "+ ai)
-            console.log("You chose " + user)
-            console.log("You both chose the same, It's a draw!")
-            console.log("----------")
+            console.log(
+                "Computer chose "+ ai +'\n'+ 
+                "You chose " + user +'\n'+
+                "You both chose the same, It's a draw!" +'\n'+
+                "----------")
         }else if(user === "rock" && ai=== "scissors"){
-            console.log("Computer chose "+ ai)
-            console.log("You chose " + user)
-            console.log("Rock blunts scissors. You win!")
-            console.log("----------")
+            console.log(
+                "Computer chose "+ ai +'\n'+
+                "You chose " + user +'\n'+
+                "Rock blunts scissors. You win!" +'\n'+
+                "----------")
         }else if(user ==="paper" && ai ==="scissors"){
-            console.log("Computer chose "+ ai)
-            console.log("You chose " + user)
-            console.log("Scissors cut paper. You lose!")
-            console.log("----------")
+            console.log(
+                "Computer chose "+ ai +'\n'+
+                "You chose " + user +'\n'+
+                "Scissors cut paper. You lose!" +'\n'+
+                "----------")
         }else if(user ==="paper" && ai ==="rock"){
-            console.log("Computer chose "+ ai)
-            console.log("You chose " + user)
-            console.log("Paper wraps rock. You win!")
-            console.log("----------")
+            console.log(
+                "Computer chose "+ ai +'\n'+
+                "You chose " + user +'\n'+
+                "Paper wraps rock. You win!" +'\n'+
+                "----------")
         }else if(user ==="scissors" && ai ==="rock"){
-            console.log("Computer chose "+ ai)
-            console.log("You chose " + user)
-            console.log("Rock blunts scissors. You lose!")
-            console.log("----------")
+            console.log(
+                "Computer chose "+ ai +'\n'+
+                "You chose " + user +'\n'+
+                "Rock blunts scissors. You lose!" +'\n'+
+                "----------")
         }else if(user ==="scissors" && ai ==="paper"){
-            console.log("Computer chose "+ ai)
-            console.log("You chose " + user)
-            console.log("Scissors cut paper. You win!")
-            console.log("----------")
+            console.log(
+                "Computer chose "+ ai +'\n'+
+                "You chose " + user +'\n'+
+                "Scissors cut paper. You win!" +'\n'+
+                "----------")
         }else if(user ==="rock" && ai ==="paper"){
-            console.log("Computer chose "+ ai)
-            console.log("You chose " + user)
-            console.log("Paper wraps rock. You lose!")
-            console.log("----------")
+            console.log(
+                "Computer chose "+ ai +'\n'+
+                "You chose " + user +'\n'+
+                "Paper wraps rock. You lose!" +'\n'+
+                "----------")
         }
     }else{
         alert("You must choose \"Rock\", \"Paper\", or \"Scissors\". It is NOT case sensitive");
