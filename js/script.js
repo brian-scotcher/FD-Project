@@ -83,9 +83,12 @@ function oddOrEven(){//Tells user if their number is odd or even
 
 //Assignment 4
 
-function rockPaperScissors(){//The Rock Paper Scissors game
-    alert("Welcome to Rock, Paper, Scissors game.")
+function game(){//The Rock Paper Scissors game
+
+    alert("Welcome to Rock, Paper, Scissors game. Best out of 5")
     
+    for (let i = 0; i< 5; i++){//This will provide the player with 5 rounds
+
     const userOptions=["rock", "paper", "scissors"];
 
     function userTurn(){//asks user to enter their choice and converts to lowercase.
@@ -94,7 +97,7 @@ function rockPaperScissors(){//The Rock Paper Scissors game
         return userChoice;
     }
 
-    function computerTurn(){//Computer returns random value from array
+    function computerPlay(){//Computer returns random value from array
         const computerOptions=["rock", "paper", "scissors"];
         return computerOptions[Math.floor(Math.random()*computerOptions.length)];
         
@@ -102,7 +105,7 @@ function rockPaperScissors(){//The Rock Paper Scissors game
 
     //Stores output of above function outputs into varibales
     let user = userTurn();
-    let ai = computerTurn();
+    let ai = computerPlay();
 
     //console.log("computer chooses: "+computerTurn())
     //console.log("user chooses: "+userTurn())
@@ -156,6 +159,8 @@ function rockPaperScissors(){//The Rock Paper Scissors game
     }else{
         alert("You must choose \"Rock\", \"Paper\", or \"Scissors\". It is NOT case sensitive");
         
+    }
+
     }
     
 }
