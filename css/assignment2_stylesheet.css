@@ -1,0 +1,59 @@
+/*Font packages*/
+@font-face {
+    font-family: robotoRegular;
+    src: url(fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: robotoThin;
+    src: url(fonts/Roboto-Thin.ttf) format('truetype');
+    font-weight: thin;
+
+}
+
+@font-face {
+    font-family: robotoBold;
+    src: url(fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: bolder;
+}
+
+
+/*CSS*/
+
+body{
+    margin:0;
+    background-image: url("../img/rockPaperScissors/brickWall_bg.jpg");
+    background-color: #623825;
+    background-size: 100%;
+    padding: 2% 10% 2% 10%;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+#pageTitle{
+    font: 24px "robotoBold", sans-serif;
+    color: yellow;
+}
+
+#rockPaperScissors{
+    background-color: rgba(0, 11, 37, 0.9);
+    padding: 2% 10% 2% 10%;
+    border-radius: 10px;
+}
+
+#rpsTitle{
+    font: 20px "robotoRegular", sans-serif;
+    color: yellow;
+    
+}
+
+#rpsInstructions{
+    font: 20px "robotoThin", sans-serif;
+    color: yellow;
+    
+}
