@@ -21,39 +21,62 @@
 
 /*CSS*/
 
-body{
-    margin:0;
-    background-image: url("../img/rockPaperScissors/brickWall_bg.jpg");
-    background-color: #623825;
+body {
+    margin: 0;
+    background-image: url("../img/rockPaperScissors/backgroundImage.jpg");
+    background-color: #3a3a3a;
     background-size: 100%;
     padding: 2% 10% 2% 10%;
 }
 
-.header{
+.header {
     display: flex;
     position: relative;
     margin-bottom: 2%;
 }
 
-#pageTitle{
+#pageTitle {
     font: 24px "robotoBold", sans-serif;
-    color: yellow;
+    color: rgb(147, 226, 102);
+
+    text-shadow:
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
 
-#rockPaperScissors{
+#rockPaperScissors {
     background-color: rgba(0, 11, 37, 0.9);
     padding: 2% 10% 2% 10%;
     border-radius: 10px;
 }
 
-#rpsTitle{
+#rpsTitle {
     font: 20px "robotoRegular", sans-serif;
-    color: yellow;
-    
+    color: rgb(147, 226, 102);
+
+    text-shadow:
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+
 }
 
-#rpsInstructions{
+p {
     font: 20px "robotoThin", sans-serif;
-    color: yellow;
-    
+    color: rgb(187, 255, 148);
+
+    text-shadow:
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
 }
