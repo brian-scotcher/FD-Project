@@ -37,11 +37,24 @@ btnContainer.style.padding = "0px 200px";
 //game status div and content
 const gameStatusDiv = document.createElement('div');
 const gameStatusDisplay = document.createElement('p');
+const gameResultDisplay = document.createElement('p');
+const gameResetBtn =document.createElement('button');
 let gameStatusText = document.createTextNode("Choose one.");
+gameResultText= document.createTextNode("");
 gameStatusDiv.setAttribute('id', "gameStatusDiv");
 gameStatusDiv.style.display = "flex";
+gameStatusDiv.style.flexDirection="column";
 gameStatusDiv.style.alignSelf = "center";
 gameStatusDiv.style.marginTop="30px";
+gameResultDisplay.style.alignSelf="center";
+gameResultDisplay.style.padding="5px";
+gameResultDisplay.appendChild(gameResultText);
+gameStatusDiv.appendChild(gameResultDisplay);
+gameResetBtn.setAttribute('id', 'resetGame');
+gameResetBtn.style.marginTop='10px'
+gameResetBtn.textContent = "Play again.";
+
+
 
 
 
@@ -178,6 +191,43 @@ function roundKeeper(){
     round++;
 
     roundText.nodeValue="Round: "+round;
+
+    if (round==5){
+        rockBtn.disabled=true;
+        paperBtn.disabled=true;
+        scissorsBtn.disabled=true;
+
+        if(playerScore>aiScore){
+            gameResultText.nodeValue="You won!"
+            
+        }
+        if(playerScore<aiScore){
+            gameResultText.nodeValue="You lost!"
+            
+        }
+        if(playerScore==aiScore){
+            gameResultText.nodeValue="It's a tie!";
+            
+        }
+        gameResultDisplay.style.backgroundColor="#DD6E42";
+        gameResultDisplay.style.borderRadius="5px";
+        gameStatusDiv.appendChild(gameResultDisplay);
+        gameStatusDiv.appendChild(gameResetBtn);
+
+        /*gameResetBtn.addEventListener("click", ()=>{
+            restart()
+        });*/
+        
+    }
+    
+
+    /*function restart(){
+        playerScore=0;
+        aiScore=0;
+        round=0;
+        gameResetBtn();
+    }*/
+
 }
 
 
