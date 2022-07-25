@@ -15,6 +15,7 @@ scorebar.style.display="flex";
 scorebar.style.flexDirection="row";
 scorebar.style.justifyContent="space-between"
 
+
 const playerScoreDisplay = document.createElement('p');
 const aiScoreDisplay = document.createElement('p');
 const playerScoreText = document.createTextNode("Player Score: " + playerScore);
@@ -22,12 +23,12 @@ const aiScoreText = document.createTextNode("Computer Score: " + aiScore);
 playerScoreDisplay.style.width="fit-content";
 aiScoreDisplay.style.width="fit-content";
 
-
-
 //game area and content
 const gameArea = document.createElement('div');
 gameArea.setAttribute("id", "gameArea")
-
+gameArea.style.display="flex"
+gameArea.style.flexDirection="row";
+gameArea.style.justifyContent="space-between"
 
 //rock button
 const rockBtn = document.createElement("button");
@@ -35,7 +36,7 @@ rockBtn.setAttribute('id', 'rockButton');
 rockBtn.textContent = 'ROCK';
 
 //paper button
-paperBtn = document.createElement("button");
+const paperBtn = document.createElement("button");
 paperBtn.setAttribute('id', 'paperButton');
 paperBtn.textContent = 'PAPER';
 
@@ -71,7 +72,12 @@ function gameSetup() {//sets up the start of the game
     scorebar.appendChild(aiScoreDisplay);
     playerScoreDisplay.appendChild(playerScoreText);
     aiScoreDisplay.appendChild(aiScoreText);
+    
+    //append game area and contents
     rockPaperScissors.appendChild(gameArea);
+    gameArea.appendChild(rockBtn);
+    gameArea.appendChild(paperBtn);
+    gameArea.appendChild(scissorsBtn);
 
 }
 
