@@ -26,15 +26,15 @@ body {
     background-color: #001B2E;
     background-size: 100%;
     padding: 2% 10%;
-    
+
 }
 
-h2{
+h2 {
     font: 26px "robotoBold", sans-serif;
     color: #C4CBCA;
 }
 
-p{
+p {
     font: 18px "robotoThin", sans-serif;
     color: #C4CBCA;
     margin: 0;
@@ -42,15 +42,15 @@ p{
 
 }
 
-#startBtn{
+#startBtn {
     align-self: flex-start;
 }
 
-#rockPaperScissors{
+#rockPaperScissors {
     display: flex;
     flex-direction: column;
     background-color: #00798C;
-    padding:20px;
+    padding: 20px;
     border-radius: 25px;
     margin: 10px 0px;
     max-width: 100%;
@@ -58,7 +58,14 @@ p{
     height: auto;
 }
 
-/*#scorebar{
+#calculatorDiv {
     display: flex;
-    flex-direction: row;
-}*/
+    flex-direction: column;
+    background-color: #00798C;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 10px 0px;
+    max-width: fit-content;
+    align-self: center;
+    height: auto;
+}

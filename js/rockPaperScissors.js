@@ -1,3 +1,4 @@
+//----ROCK PAPER SCISSORS-----
 //VARIABLES
 
 const optionsArr = ["rock", "paper", "scissors"];
@@ -187,6 +188,7 @@ if (result.includes("lose")){
 }
 }
 
+//keeps rounds and also provides reset.
 function roundKeeper(){
     round++;
 
@@ -214,20 +216,53 @@ function roundKeeper(){
         gameStatusDiv.appendChild(gameResultDisplay);
         gameStatusDiv.appendChild(gameResetBtn);
 
-        /*gameResetBtn.addEventListener("click", ()=>{
+        gameResetBtn.addEventListener("click", ()=>{
             restart()
-        });*/
+        });
+
+        function restart(){
+            
+            if(round=5){
+                
+                playerScore = 0;
+                aiScore = 0;
+                round = 0;
+
+                roundText.data="Round: "+round;
+                playerScoreText.data="Player score: "+playerScore;
+                aiScoreText.data="Computer Score: " +aiScore;
+                gameResultDisplay.remove();
+                gameResetBtn.remove();
+
+                
+                rockBtn.disabled=false;
+                paperBtn.disabled=false;
+                scissorsBtn.disabled=false;
+                
+            }
+        }
         
     }
     
 
-    /*function restart(){
-        playerScore=0;
-        aiScore=0;
-        round=0;
-        gameResetBtn();
-    }*/
-
 }
+
+//----CALCULATOR-----
+
+let answer=0;
+
+const buttonValues = [
+    [7, 8, 9, "+"]
+    [4, 5, 6, "-"]
+    [1, 2, 3, "*"]
+    ["C", 0, "=", "/"]
+]
+
+const calculatorDiv = getElementById("calculatorDiv");
+
+//calculator display
+const calculatorDisplayDiv = document.createElement('div');
+let calculatortext=document.createElement
+
 
 
