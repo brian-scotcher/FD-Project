@@ -249,20 +249,82 @@ function roundKeeper(){
 
 //----CALCULATOR-----
 
-let answer=0;
+let answer = 0;
 
-const buttonValues = [
-    [7, 8, 9, "+"]
-    [4, 5, 6, "-"]
-    [1, 2, 3, "*"]
-    ["C", 0, "=", "/"]
-]
+const values = [
+    //["C", "%", "/", "*"],
+    [7, 8, 9, "/"],
+    [4, 5, 6, "*"],
+    [1, 2, 3, "-"],
+    [".", 0,"=","+"],
+];
 
-const calculatorDiv = getElementById("calculatorDiv");
+const calculatorDiv = document.getElementById("calculatorDiv");
 
 //calculator display
+
 const calculatorDisplayDiv = document.createElement('div');
-let calculatortext=document.createElement
+const calculatorTextDisplay= document.createElement('p');
+const calculatorText=document.createTextNode(answer);
+calculatorDisplayDiv.setAttribute('id', 'calculatorDisplayDiv');
 
+calculatorDiv.appendChild(calculatorDisplayDiv);
+calculatorDisplayDiv.appendChild(calculatorTextDisplay);
+calculatorTextDisplay.appendChild(calculatorText);
 
+calculatorDisplayDiv.style.backgroundColor='#FDFDFF';
+calculatorDisplayDiv.style.display='flex';
+calculatorDisplayDiv.style.justifyContent='end';
+calculatorDisplayDiv.style.borderRadius='5px';
+calculatorTextDisplay.style.color='#001B2E';
+calculatorTextDisplay.style.font='35px "robotoBold", sans-serif';
+calculatorDisplayDiv.style.paddingRight='10px';
+calculatorDisplayDiv.style.marginBottom='10px';
 
+//Buttons Div and content
+calculatorBtnsDiv=document.createElement('div');
+calculatorBtnsDiv.setAttribute('id', 'calculatorBtnsDiv');
+calculatorBtnsDiv.style.display="flex";
+calculatorBtnsDiv.style.flexDirection="column";
+calculatorDiv.appendChild(calculatorBtnsDiv)
+
+createButtons(values);
+
+//FUNCTIONS
+//Creates number and operator buttons using "values" array
+function createButtons(buttonValues){
+
+    for (let i=0; i<buttonValues.length;i++){
+        const rowDiv = document.createElement('div');
+        rowDiv.style.display="flex";
+        rowDiv.style.flexDirection="row";
+        rowDiv.setAttribute('id', 'row'+i);
+        calculatorBtnsDiv.appendChild(rowDiv);
+
+        for (let j=0; j<buttonValues.length;j++){
+            const btn = document.createElement('button')
+            
+            btn.style.display = "block";
+            btn.style.width = "100px";
+            btn.style.height = "80px";
+            btn.style.font='35px "robotoBold", sans-serif'
+
+            btn.style.backgroundColor="#C4CBCA";
+            btn.style.borderColor="#FDFDFF"
+
+            btn.setAttribute('id', buttonValues[i][j] );
+            btn.setAttribute('value', buttonValues[i][j]);
+            btn.textContent = buttonValues[i][j];
+            
+            rowDiv.appendChild(btn);
+
+            if(btn.value=='='){
+                btn.style.backgroundColor="#DD6E42";
+                
+            }
+        
+        }
+
+    }
+    
+}
